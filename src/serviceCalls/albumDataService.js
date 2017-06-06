@@ -1,9 +1,9 @@
-var root = 'https://reqres.in';
+var root = 'https://jsonplaceholder.typicode.com';
 
 import fc from '../shared/fetchinterceptor';
 //if callback provided call the the cb with data
-export let getMovies = function (cb) {
-    fc.get(root + '/api/users')
+export let getAlbum = function (cb) {
+    fc.get(root + '/photos')
         .then(data => {
             if (cb) {
                 cb(data);
